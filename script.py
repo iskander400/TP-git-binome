@@ -1,11 +1,15 @@
 def calculer_moyenne(notes):
-    
-    pass
+    total = 0
+    for note in notes:
+        total = total + note
+    return total / len(notes)
 
 def afficher_resultat(moyenne):
-    
-    pass
+  
+    print("La moyenne est:", moyenne)
 
-# Programme principal
+Programme principal
 notes = [12, 15, 18, 10, 14]
 print("Notes:", notes)
+moyenne = calculer_moyenne(notes)
+afficher_resultat(moyenne)
